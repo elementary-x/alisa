@@ -13,17 +13,17 @@ async def on_ready():
 @bot.command('alisa')
 async def on_message(message):
     await message.channel.send('?')
-#join
+
 @bot.command('join')
 async def join_voice(message):
      channel = message.message.author.voice.channel
      await channel.connect()
-#leave
+
 @bot.command('leave')
 async def leave(message):
     channel = message.message.guild.voice_client
     await channel.disconnect()
-#send pictures (cats)
+
 @bot.command('cats')
 async def get_session(message):
     channel = message.message.channel
