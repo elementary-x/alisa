@@ -3,7 +3,7 @@ import aiohttp
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='#')
-token = 'NTc5Njc0MDE2Mzk5MjI4OTI4.XQ9wjQ.8srSWEMN4JPQhOvba1E6CdXPSeg'
+token = '#'
 
 @bot.event
 async def on_ready():
